@@ -10,8 +10,10 @@ function App() {
     return (
         <>
             <Header cls="fixed-top" />
-                                    
-            <Maincontent />
+            <Routes>
+                <Route path='/' element={<Maincontent />}></Route>
+            </Routes>            
+           
             <Footer /> 
             <Quickmenu />
         </>
