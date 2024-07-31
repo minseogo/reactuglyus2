@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Interview from './Interview';
 import Kakaomap from './Kakaomap';
-import { Title, Leadcopy } from '../../style/commonui';
+import { Title, Leadcopy } from '../../../style/commonui';
 
 function Map() {
     const [targetnum, setTargetNum] = useState(0);
