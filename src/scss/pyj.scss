@@ -6,12 +6,240 @@ $uglygreen : #5EAB42;
 $uglyblack : #1F2937;
 $uglygray : #414B5A;
 
+// 맵 컴포넌트
+// 맵 폰트
+.font_subtitle_pyj{
+  font-family: 'Pretendard';
+  font-size: 22px;
+  font-weight: 700;
+  color:$uglyblack;
+  letter-spacing: -0.5px;
+  line-height: 1.8rem;
+  @media (max-width : 990px){
+    font-size: 20px;
+    line-height: 1.5rem;
+  }
+}
+.font_leadcopy_pyj{
+  font-family: 'Pretendard';
+  font-size: 18px;
+  font-weight: 600;
+  color:$uglygray;
+  letter-spacing: -0.5px;
+  line-height: 1.8rem;
+    @media (max-width : 990px){
+      font-size: 18px;
+      line-height: 3.5rem;
+    }
+}
+.font_text_pyj{
+  font-family: 'Pretendard';
+  font-size: 16px;
+  font-weight: 400;
+  color:$uglygray;
+  letter-spacing: -0.5px;
+  line-height: 1.5rem;
+    @media (max-width : 990px){
+      font-size: 14px;
+    }
+}
+
+// 맵 버튼
+.mapbuttonstyle_pyj{
+  width: 147px;
+  height: 37px;
+  background-color: $uglyorange;
+  border-radius: 20px;
+  border: none;
+    a{
+      color: #fff;
+      text-decoration: none;
+    }
+}
+
+// API 지도 크기
+.mapheight{
+  height: 522px;
+    @media (max-width : 990px) {
+      height: 250px;
+    }
+}
+
+// 폼 컨텐츠 css
+// 폼 폰트 
+.font_title_k_pyj{
+  font-family: 'Pretendard';
+  font-size: 30px;
+  font-weight: 700;
+  color: $uglyblack;
+  letter-spacing: -0.5px;
+  line-height: 2.5rem;
+    @media (max-width : 990px){
+      font-size: 22px;
+      line-height: 1.8rem;
+    }
+  }
+  .formfont_subtitle_pyj{
+    font-family: 'Pretendard';
+    font-size: 22px;
+    font-weight: 700;
+    color:$uglyblack;
+    letter-spacing: -0.5px;
+    line-height: 1.8rem;
+      @media (max-width : 990px){
+        font-size: 17px;
+        line-height: 1.4rem;
+      }
+  }
+  .formfont_popup_pyj{
+    font-family: 'Pretendard';
+    font-size: 18px;
+    font-weight: 400;
+    color:$uglyblack;
+    letter-spacing: -0.5px;
+    line-height: 1.7rem;
+      @media (max-width : 990px){
+        font-size: 14px;
+        line-height: 1.4rem;
+      }
+  }
+  .formfont_text_pyj {
+    font-family: "Pretendard";
+    font-size: 16px;
+    font-weight: 600;
+    color: $uglyblack;
+      @media (max-width : 990px){
+        font-size: 13px;
+    }
+  }
+  .formfont_placehold_pyj{
+    font-family: 'Pretendard';
+    font-size: 14px;
+    font-weight: 500;
+    color: $uglygray;
+      @media (max-width : 990px){
+        font-size: 12px;
+    }
+  }
+
+  // 배경
+  .contents_background_pyj{
+    background-color: #FFF4DF;
+    padding: 9rem 0;
+    @media (max-width : 990px) {
+      padding: 3rem
+    }
+  }
+  .form_background_pyj{
+    max-width: 500px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+
+  // 폼 입력칸 스타일
+  .input_box_1_pyj{
+    border: 1px solid #cccccc;
+    padding-left: 10px !important;
+    border-radius: 5px;
+    max-width: 400px;
+    height: 33px;
+      @media (max-width : 990px){
+        max-width: 300px;
+      }
+  }
+  .input_box_2_pyj{
+    border: 1px solid #cccccc;
+    padding-left: 10px !important;
+    border-radius: 5px;
+    max-width: 130px;
+    height: 33px;
+      @media (max-width : 990px){
+        max-width: 97px;
+      }
+  }
+  .mx_1{
+    margin: 0 0.25rem;
+  }
+  .errorps{
+    padding-left: 11px;
+  }
+  
+  // 폼 버튼
+  .formbuttonstyle_pyj{
+    width: 400px;
+    height: 60px;
+    background-color: $uglyorange;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    font-family: 'Pretendard';
+    font-size: 22px;
+    font-weight: 600;
+      @media (max-width : 990px){
+        max-width: 300px;
+        height: 50px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+  }
+
+// 팝업
+// 팝업 오버레이 스타일
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  .popup-content {
+    background: #fff;
+    width: 350px;
+    height: 180px;
+    border-radius: 20px;
+    @media (max-width : 990px){
+      width: 300px;
+      height: 130px;
+    }
+
+    .popupbuttonstyle{
+      width: 300px;
+      height: 40px;
+      border-radius: 20px;
+      font-family: 'Pretendard';
+      font-size: 15px;
+      font-weight: 600;
+      background-color: $uglyorange;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      @media (max-width : 990px){
+        width: 250px;
+        height: 30px;
+        font-size: 13px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+// body 스크롤 비활성화
+body.no-scroll {
+  overflow: hidden;
+}
+
 // 퀵버튼 컴포넌트
 // 퀵 폰트
 .font_button_pyj{
   font-family: 'Pretendard';
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   color: #000000;
   letter-spacing: -0.5px;
   line-height: 1.5rem;
@@ -19,7 +247,6 @@ $uglygray : #414B5A;
       font-size: 12px;
     }
 }
-
 
 // 퀵버튼 스타일
 .quickIcon{
@@ -166,27 +393,29 @@ $uglygray : #414B5A;
 //     transform: scaleY(-1);
 //   }
 // }
-// #map_pyj{
-//   position: relative;
-//   width: 100%;
-//   height: 100%;
+#map_pyj{
+  position: relative;
+  width: 100%;
+  height: 100%;
 
-//   .map_background{
-//     background-image: url(../img/img_pyj/webbackground/background.svg);
-//     background-repeat: no-repeat;
-//     background-position: left 0 top 0;
-//     width: 100%;
-//     height: 100%;
-//     background-size: cover;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     z-index: -1; 
-//     @media (max-width : 990px){
-//       background-position: left -80vw top 0;
-//     }
-//   }
-// }
+  &:before{
+    content: "";
+    background: url('../../public/img/img_pyj/webbackground/background.svg');
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+    @media (max-width : 990px){
+      background-position: left -80vw top 0;
+    }
+  }
+}
+
 
 // #event_banner_yys{
 //   .event_banner_pyj{
@@ -198,18 +427,6 @@ $uglygray : #414B5A;
 // }
 
 // // 반응형
-// .map_title_pyj{
-//   display: inline;
-//     @media (max-width : 1780px){
-//       display:block;
-//     }
-// }
-// .map_text_pyj{
-//   display: inline;
-//     @media (max-width : 830px){
-//       display: none;
-//     }
-// }
 // .form_title_pyj{
 //   display: inline;
 //     @media (max-width : 1800px){
@@ -225,158 +442,23 @@ $uglygray : #414B5A;
 
 
 // // 공백
-// .text_blank_pyj{
-//   margin-bottom: 23px;
-//     @media (max-width : 990px){
-//       margin-bottom: 0;
-//     }
-// }
+.text_blank_pyj{
+  margin-bottom: 22px;
+    @media (max-width : 990px){
+      margin-bottom: 0;
+    }
+}
 // .content_blank_pyj{
 //   padding: 50px 0 100px 0;
 //   margin-top: 18px;
 //   margin-bottom: 100px;
 // }
 
-// // .section_top_blank_pyj{
-// //   padding-top: 220px;
-// //   @media (max-width : 990px){
-// //     margin-top: 80px;
-// //   }
-// // }
-
-
-// // 맵 컨텐츠 
-// // 이미지
-// #map_img{
-//   position: relative;    
-//   @media (max-width:990px){
-//       height:40vw;
-//     }
-//   .map_svg{
-//     background: url('/image/img_pyj/quick/img_pyj/map/map_img.svg') no-repeat center;
-//     background-size: cover;    
-//     position: absolute;
-//     left:0;
-//     right:0;
-//     top:0;
-//     bottom:0;
-//   }
-//   .map_span{
-//     position : absolute;
-//     width : 0;
-//     height : 0;
-//     display : block;
-//     overflow : hidden;
-//     opacity : 0;
-//   }
-// }
-
-// // 맵 폰트
-// .font_subtitle_pyj{
-//   font-family: 'Pretendard';
-//   font-size: 22px;
-//   font-weight: 700;
-//   color:$uglyblack;
-//   letter-spacing: -0.5px;
-//   line-height: 1.8rem;
+// .section_top_blank_pyj{
+//   padding-top: 220px;
 //   @media (max-width : 990px){
-//     font-size: 30px;
-//     line-height: 2.5rem;
+//     margin-top: 80px;
 //   }
-//   @media (max-width : 690px){
-//     font-size: 25px;
-//     line-height: 2rem;
-//   }
-//   @media (max-width : 580px){
-//     font-size: 20px;
-//     line-height: 1.5rem;
-//   }
-//   @media (max-width : 450px){
-//     font-size: 16px;
-//     line-height: 1.2rem;
-//   }
-// }
-// .font_leadcopy_pyj{
-//   font-family: 'Pretendard';
-//   font-size: 18px;
-//   font-weight: 600;
-//   color:$uglygray;
-//   letter-spacing: -0.5px;
-//   line-height: 1.8rem;
-//     @media (max-width : 990px){
-//       font-size: 22px;
-//       line-height: 5rem;
-//     }
-//     @media (max-width : 690px){
-//       font-size: 18px;
-//       line-height: 4rem;
-//     }
-//     @media (max-width : 580px){
-//       font-size: 16px;
-//       line-height: 3.5rem;
-//     }
-//     @media (max-width : 450px){
-//       font-size: 14px;
-//       line-height: 2.5rem;
-//     }
-// }
-// .font_text_pyj{
-//   font-family: 'Pretendard';
-//   font-size: 16px;
-//   font-weight: 400;
-//   color:$uglygray;
-//   letter-spacing: -0.5px;
-//   line-height: 1.5rem;
-//     @media (max-width : 990px){
-//       font-size: 14px;
-//     }
-//     @media (max-width : 450px){
-//       font-size: 12px;
-//     }
-// }
-
-// // 맵 마커펜 이펙트
-// #map_pyj .marker_pyj span{
-//   position: relative;
-// }
-
-// .marker_pyj{
-//   .marker_text:before{
-//     content: "";
-//     position: absolute;
-//     left: 0;
-//     bottom: 0;
-//     height: 100%;
-//     width: 0;
-//     background-color: red;
-//     color: #fff !important;
-//     transition: 0.5s;
-//     animation: widthani 0.5s;
-//     animation-delay: 1s;
-//     animation-fill-mode: forwards;
-//   }
-
-//   @keyframes widthani {
-//     0%{
-//       width: 0;
-//     }
-//     100%{
-//       width: 100%;
-//     } 
-//   }
-// }
-
-// // 맵 버튼
-// .mapbuttonstyle_pyj{
-//   width: 147px;
-//   height: 37px;
-//   background-color: $uglyorange;
-//   border-radius: 20px;
-//   border: none;
-//     a{
-//       color: #fff;
-//       text-decoration: none;
-//     }
 // }
 
 
@@ -528,64 +610,4 @@ $uglygray : #414B5A;
 //           font-size: 16px;
 //           line-height: 1.4rem;
 //       }
-// }
-
-// #map_pick_pyj{
-//   position: absolute;
-//   transition: 1s;
-//   font-size: 30px;
-//   text-align: center; 
-//   width:100%;
-//   height:100%;
-  
-//     .pick_con1{
-//       position: absolute;
-//       top: 50%;
-//       left: 55%;
-//       width:50px;
-//       height: 50px;
-//       overflow: hidden;
-//       display: block;
-//       &:hover{
-//         filter: invert(1) sepia(1) saturate(10000%) hue-rotate(0deg) brightness(0.7);
-//       }
-//     }
-//     .pick_con2{
-//       position: absolute;
-//       top: 35%;
-//       left: 45%;
-//       width:50px;
-//       height: 50px;
-//       overflow: hidden;
-//       display: block;
-//       &:hover{
-//         filter: invert(1) sepia(1) saturate(10000%) hue-rotate(0deg) brightness(0.7);
-//       }
-//     }
-//     .pick_con3{
-//       position: absolute;
-//       top: 20%;
-//       right: 45%;
-//       width:50px;
-//       height: 50px;
-//       overflow: hidden;
-//       display: block;
-//       &:hover{
-//         filter: invert(1) sepia(1) saturate(10000%) hue-rotate(0deg) brightness(0.7);
-//       }
-//     }
-//     i{
-//       transform: translateY(100%);
-//       display: block;
-//       animation: fontani 1.5s;
-//       animation-fill-mode: forwards;
-//     }
-// }
-// @keyframes fontani {
-//   0%{
-//     transform: translateY(100%);
-//   }
-//   100%{
-//     transform: translateY(0);
-//   } 
 // }
